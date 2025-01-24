@@ -51,7 +51,7 @@ nav ul {
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
 nav li {
-	background-color: #B9770E;
+	background-color: #f08080;
 	list-style-type: none;
 	margin: 0.4em;
 	padding: 0.5em;
@@ -71,7 +71,7 @@ main {
 	margin-top: 0.5em;
 	padding: 0.5em;
 	border-radius: 1em;
-	background-color: #A9CCE3;
+	background-color: #fafad2;
 	text-align: center;
 }
 
