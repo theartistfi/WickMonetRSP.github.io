@@ -89,7 +89,7 @@ footer {
 
 /*Style hides the desktop class */
 .desktop {
-	display: none%;
+	display: inline;
 }
 
 /* Media query for desktop viewport targets screens with a minumum width of 830px. */
