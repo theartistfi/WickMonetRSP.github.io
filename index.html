@@ -6,43 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/screenstyles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search">
 </head>
-
-<body>
-    <form action="/search" method="get">
-        <div class="search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input id="searchInput" class="search-input" type="search" placeholder="Search" onkeyup="showSuggestions()">
-            <div id="suggestions" class="suggestions-dropdown"></div>
-        </div>
-    </form>
-
-    <script>
-        const terms = ["Wick Monet", "Residency", "Support", "Artist", "Program", "Application", "Creative"];
-
-        function showSuggestions() {
-            let input = document.getElementById('searchInput').value;
-            let suggestions = document.getElementById('suggestions');
-            suggestions.innerHTML = ''; // Clear previous suggestions
-
-            if (input.length > 0) {
-                let filteredTerms = terms.filter(term => term.toLowerCase().includes(input.toLowerCase()));
-                
-                filteredTerms.forEach(term => {
-                    let suggestionItem = document.createElement('div');
-                    suggestionItem.classList.add('suggestion-item');
-                    suggestionItem.textContent = term;
-                    suggestionItem.onclick = function() {
-                        window.location.href = '/search?query=' + term; // Redirect to a search page with the selected term
-                    };
-                    suggestions.appendChild(suggestionItem);
-                });
-            }
-        }
-    </script>
-</body>
 
 <body>
 
