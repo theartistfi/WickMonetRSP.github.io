@@ -89,7 +89,7 @@ footer {
 
 /*Style hides the desktop class */
 .desktop {
-	display: inline;
+	display: none%;
 }
 
 /* Media query for desktop viewport targets screens with a minumum width of 830px. */
@@ -102,23 +102,23 @@ footer {
 
 	/* Style to create a fluid image */
 	img {
-		width: 100%; /* Adjusted to match mobile */
+		width: 80%; /* Adjusted to match mobile */
 	}
 	
 	/* Style for li specifies the background color, rounded corners, remove bullet style, and applies margins and padding for list items within the navigation */
 	nav li {
 		display: inline;
-		float: none; /* Adjusted to align horizontally like mobile */
-		margin-left: 0.5em; /* Adjusted spacing */
-		padding-left: 0.7em; /* Adjusted padding */
-		padding-right: 0.7em; /* Adjusted padding */
-		width: auto; /* Adjusted width */
+		float: left; /* Adjusted to align horizontally like mobile */
+		margin-left: 1%; /* .5em */
+		padding-left: 0; /* .7em */
+		padding-right: 0; /* .7em */
+		width: 18%; /* Adjusted width */
 	}
 	
 	/* Style specifies clear and top margin properties for the main element */
 	main {
-		clear: none; /* Adjusted to remove clearing */
-		margin-top: 1em; /* Adjusted margin */
+		clear: left; /* none , margin-top: 1em; /* Adjusted margin */
+		
 	}
 	
 	/* Style specifies to hide the mobile class */
@@ -137,12 +137,12 @@ footer {
 	
 	/* Style specifies a width for container */
 	#container {
-		width: 100%; /* Adjusted to match mobile */
+		width: 80%; /* Adjusted to match mobile */
 	}
 	
 	/* Style to create a fluid image */
 	img {
-		width: 100%; /* Adjusted to match mobile */
+		width: 60%; /* Adjusted to match mobile */
 	}
 	
 	/* Style specifies a margin and padding for the unordered list within the nav */
@@ -158,7 +158,7 @@ footer {
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0;
-		width: auto; /* Adjusted width */
+		width: auto; /* 20% */
 		white-space: nowrap;
 	}
 	
@@ -183,7 +183,7 @@ footer {
 		margin-top: 0.5em;
 		padding: 1em;
 		border-radius: 1em;
-		background-color: #A9CCE3;
+		background-color: #fafad2;
 	}
 
 	/* Style rule for pseudo-classes */
