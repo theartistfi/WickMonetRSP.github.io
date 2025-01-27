@@ -7,7 +7,7 @@ body {
 
 /* Style to create a fluid image */
 img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 /* Styles for Mobile Layout */
@@ -93,27 +93,27 @@ footer {
 }
 
 /* Media query for desktop viewport targets screens with a minumum width of 830px. */
-
 @media only screen and (min-width: 830px) {
 	
 	/* Style to create a fluid image */
 	img {
-		width: 80%;
+		width: 100%; /* Adjusted to match mobile */
 	}
 	
-	/*Style for li specifies the background color, rounded corners, remove bullet style, and applies margins and padding for list items within the navigation */
+	/* Style for li specifies the background color, rounded corners, remove bullet style, and applies margins and padding for list items within the navigation */
 	nav li {
 		display: inline;
-		float: left;
-		margin-left: 1%;
-		padding-left: 0;
-		padding-right: 0;
-		width: 18%;
+		float: none; /* Adjusted to align horizontally like mobile */
+		margin-left: 0.5em; /* Adjusted spacing */
+		padding-left: 0.7em; /* Adjusted padding */
+		padding-right: 0.7em; /* Adjusted padding */
+		width: auto; /* Adjusted width */
 	}
 	
 	/* Style specifies clear and top margin properties for the main element */
 	main {
-		clear: left;
+		clear: none; /* Adjusted to remove clearing */
+		margin-top: 1em; /* Adjusted margin */
 	}
 	
 	/* Style specifies to hide the mobile class */
@@ -125,24 +125,22 @@ footer {
 	.desktop {
 		display: inline;
 	}
-		
 }
 
 /* Media query for desktop viewport targets screens with a min-width of 769px. */
-
 @media only screen and (min-width: 769px) {
 	
 	/* Style specifies a width for container */
 	#container {
-		width: 80%;
+		width: 100%; /* Adjusted to match mobile */
 	}
 	
 	/* Style to create a fluid image */
 	img {
-		width: 60%;
+		width: 100%; /* Adjusted to match mobile */
 	}
 	
-	/* Style specifies a margin and padding for the unorderdered list within the nav */
+	/* Style specifies a margin and padding for the unordered list within the nav */
 	nav ul {
 		margin: 0;
 		padding-left: 0.50%;
@@ -155,7 +153,7 @@ footer {
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0;
-		width: 20%;
+		width: auto; /* Adjusted width */
 		white-space: nowrap;
 	}
 	
@@ -181,7 +179,6 @@ footer {
 		padding: 1em;
 		border-radius: 1em;
 		background-color: #A9CCE3;
-		/* box-shadow: 1em 1em 1em #331400; */
 	}
 
 	/* Style rule for pseudo-classes */
@@ -190,7 +187,7 @@ footer {
 	}
 	
 	nav li a:hover {
-		color:#000000;
+		color: #000000;
 		font-size: 1.5em;
 	}
 	
@@ -233,14 +230,16 @@ footer {
 	/* Styles for table layout */
 	@media only screen and (min-width: 481px) {
 		img {
-				width: 45%;
+			width: 45%;
 		}
 	}
 
 	/* Styles for desktop layout */
 	@media only screen and (min-width: 965px) {
 		img {
-				width: 30%;
+			width: 30%;
 		}	
+	}
 }
+
 
