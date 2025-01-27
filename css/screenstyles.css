@@ -2,7 +2,7 @@
 
 /* Style for body specifies a background color */
 body {
-	background-color: #FFFFFF;
+	background-color: #FFFFFF; /* Default background */
 }
 
 /* Style to create a fluid image */
@@ -95,6 +95,11 @@ footer {
 /* Media query for desktop viewport targets screens with a minumum width of 830px. */
 @media only screen and (min-width: 830px) {
 	
+	/* Remove yellow or blue background for landscape or desktop mode */
+	body {
+		background-color: #FFFFFF; /* Default neutral background */
+	}
+
 	/* Style to create a fluid image */
 	img {
 		width: 100%; /* Adjusted to match mobile */
@@ -191,9 +196,9 @@ footer {
 		font-size: 1.5em;
 	}
 	
-	/* Style specifies a gradient for the body element */
+	/* Remove background color for body in larger screens */
 	body {
-		background-color: #F0E68C; /* All others */
+		background-color: #FFFFFF; /* Neutral background */
 	}
 	
 	/* Style sheet created by: Fiona Kalcevic 4/19/2022 */
